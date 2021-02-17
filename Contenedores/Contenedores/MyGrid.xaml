@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contenedores.MyGrid">
+    <Grid>
+        <!-- Estructura del Grid -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Contenido del Grid -->
+        <BoxView Color="Yellow" />
+        <BoxView Color="Red" Grid.Column="1" />
+        <BoxView Color="Green" Grid.Column="2" />
+
+        <!--Segunda fila-->
+        <BoxView Color="Blue" Grid.Row="1" />
+        <BoxView Color="Purple" Grid.Row="1" Grid.Column="1" />
+        <BoxView Color="Orange" Grid.Row="1" Grid.Column="2" />
+
+        <!--Tercera fila-->
+        <BoxView Color="Black" Grid.Row="2" />
+        <BoxView Color="Magenta" Grid.Row="2" Grid.Column="1" />
+        <BoxView Color="Gold" Grid.Row="2" Grid.Column="2" />
+    </Grid>
+</ContentPage>

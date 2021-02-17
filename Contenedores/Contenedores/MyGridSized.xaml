@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contenedores.MyGridSized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!--Fijo-->
+            <ColumnDefinition Width="70" />
+            <!--Automático-->
+            <ColumnDefinition Width="Auto" />
+            <!--Proporcional-->
+            <ColumnDefinition />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <BoxView Color="Red" />
+        <BoxView Color="Blue"
+                 WidthRequest="120"
+                 Grid.Column="1" />
+        <BoxView Color="green"
+                 Grid.Column="2" />
+        <BoxView Color="Yellow"
+                 Grid.Column="3" />
+        <!--Combinar celdas-->
+        <BoxView Color="Aqua"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="4"/>
+    </Grid>
+</ContentPage>
